@@ -1,3 +1,47 @@
 body {
-  background-color: grey;
+  background-image: url('images/bg_image.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.list {
+  background-color: rgba(220,220,220, 1);
+  width: 30%;
+  display: inline-block;
+  border-radius: 5px;
+  padding: .2%;
+  position: relative;
+  /*overflow: scroll;*/
+  max-height: 100%;
+}
+
+.card {
+  background-color: rgba(255,255,255,1);
+  border-radius: 5px;
+  padding: 1.5%;
+  margin: 2%;
+  /*border: 1px solid red;*/
+  display: block;
+  font-size: 1em;
+  overflow:scroll;
+}
+
+.listHeading {
+  margin-bottom: 2px;
+  margin-top: 2px;
+  font-weight: bold;
+  /*border: 1px solid red;*/
+  padding-bottom: 3px;
+}
+
+input {
+  margin: 2px;
+  font-size: 1em;
+  background-color: rgba(220,220,220, 1);
+  color: black;
+}
+
+input:focus {
+  outline: none;
 }
