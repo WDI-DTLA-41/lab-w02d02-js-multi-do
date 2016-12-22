@@ -13,7 +13,8 @@ var addAList = function() {
   // create list container
   var $listContainer = jQuery('<div>')
   // add class
-  $listContainer.addClass('listContainer')
+  $listContainer.addClass('listContainer draggable')
+  $listContainer.draggable();
   // create UList
   var $ul = jQuery('<ul>')
   // add class
@@ -31,10 +32,10 @@ var addAList = function() {
 
   $addACard.on('keypress', function(evt){
 
-    if(evt.keyCode === 13) {
+    if(evt.keyCode === 13 && jQuery(this).val() !== "") {
       console.log('i pressed enter')
       console.log(jQuery(this))
-      // get the list
+      // get the list to append to
       $list = jQuery(this).prev()
       $newCardText = jQuery(this).val()
       addACard($newCardText, $list)
@@ -68,6 +69,6 @@ var addACard = function(newItem, list) {
 
 }
 
-// jQuery('input')
-
-// if (target.is('input')) {console.log('add a card')}
+// var $makeItMove = jQuery(function() {
+//   jQuery('.draggable').draggable();
+// })
