@@ -5,6 +5,10 @@ body {
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+button {
+  display: block;
+}
+
 .listContainer {
   background-color: rgba(220,220,220, 1);
   width: 30%;
@@ -45,6 +49,7 @@ input {
   margin: 2px;
   font-size: 1em;
   background-color: rgba(220,220,220, 1);
+  border: none;
 }
 
 input:focus {
