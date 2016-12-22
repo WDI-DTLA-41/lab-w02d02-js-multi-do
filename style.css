@@ -23,13 +23,13 @@ button {
 }
 
 .list {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   padding: 0;
   margin: 0 auto;
 }
 
 .listHeader{
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   margin: 2%;
 }
 
@@ -38,7 +38,7 @@ button {
   border-radius: 5px;
   padding: 1.5%;
   margin: 2%;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   display: block;
   font-size: 14px;
   overflow:scroll;
