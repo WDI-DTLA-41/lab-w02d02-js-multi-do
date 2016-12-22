@@ -5,15 +5,28 @@ body {
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-.list {
+.listContainer {
   background-color: rgba(220,220,220, 1);
   width: 30%;
   display: inline-block;
   border-radius: 5px;
   padding: .2%;
   position: relative;
-  /*overflow: scroll;*/
+  overflow: scroll;
   max-height: 100%;
+  box-shadow: 3px 3px 10px;
+  margin: 2%;
+}
+
+.list {
+  border: 1px solid red;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.listHeader{
+  border: 1px solid red;
+  margin: 2%;
 }
 
 .card {
@@ -21,25 +34,17 @@ body {
   border-radius: 5px;
   padding: 1.5%;
   margin: 2%;
-  /*border: 1px solid red;*/
+  border: 1px solid red;
   display: block;
-  font-size: 1em;
+  font-size: 14px;
   overflow:scroll;
-}
-
-.listHeading {
-  margin-bottom: 2px;
-  margin-top: 2px;
-  font-weight: bold;
-  /*border: 1px solid red;*/
-  padding-bottom: 3px;
+  list-style: none;
 }
 
 input {
   margin: 2px;
   font-size: 1em;
   background-color: rgba(220,220,220, 1);
-  color: black;
 }
 
 input:focus {

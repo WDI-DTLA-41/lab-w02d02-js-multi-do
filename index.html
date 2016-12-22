@@ -7,44 +7,33 @@
     <title>Multi-Do</title>
   </head>
   <body>
-    <div class="list" contenteditable="true">
-      <div class="listHeading">
-        To Do Today
-      </div>
-      <div class="card">
-        Task 1
-      </div>
-      <div class="card">
-        Times Two
-      </div>
-      <input placeholder="Add a card...">
-    </div>
-
-    <div class="list" contenteditable="true">
-      <div class="listHeading">
-        Priority
-      </div>
-      <div class="card">
-        Task 1
-      </div>
-      <div class="card">
-        Times Two
-      </div>
-      <div class="card">
-        Times Three
-      </div>
-      <input placeholder="Add a card...">
-    </div>
-
-    <!-- <div class="list" contenteditable="true">
-      <ul class="card">
-        <h4>My unordered List</h4>
-        <li>Task 1</li>
-        <li>Task 2</li>
+    <div class="listContainer" contenteditable="true">
+      <ul class="list">
+        <h4 class="listHeader">Unorganized List</h4>
+        <li class="card">Task 1</li>
+        <li class="card">Task 2</li>
       </ul>
-      </div> -->
+      <input placeholder="Add a card...">
+    </div>
 
-    <div class="list" contenteditable="true">Completed</div>
+    <div class="listContainer" contenteditable="true">
+      <ul class="list">
+        <h4 class="listHeader">Priority</h4>
+        <li class="card">Task 1</li>
+        <li class="card">Task 2</li>
+      </ul>
+      <input placeholder="Add a card...">
+    </div>
+
+    <div class="listContainer" contenteditable="true">
+      <ul class="list">
+        <h4 class="listHeader">Completed</h4>
+        <li class="card">Task 1</li>
+        <li class="card">Task 2</li>
+      </ul>
+      <input placeholder="Add a card...">
+    </div>
+
 
     <script src="main.js"></script>
   </body>
