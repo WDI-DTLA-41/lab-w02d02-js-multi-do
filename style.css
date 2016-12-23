@@ -2,7 +2,8 @@ body {
   background-image: url('images/bg_image.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  color:;
 }
 
 button {
@@ -29,8 +30,9 @@ button {
 }
 
 .listHeader{
-  /*border: 1px solid red;*/
+  border: 1px solid red;
   margin: 2%;
+  display: inline-block;
 }
 
 .card {
@@ -54,4 +56,11 @@ input {
 
 input:focus {
   outline: none;
+}
+
+.trashbin {
+  text-align: left;
+  display: inline-block;
+  float: right;
+  border: 1px solid red;
 }

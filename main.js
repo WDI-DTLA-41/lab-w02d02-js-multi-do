@@ -1,12 +1,8 @@
-console.log('hi from js')
-
 // button event listener to add list
 jQuery('button').on('click', function() {
   console.log('clicked')
   addAList();
-
 });
-
 
 // function for adding a list
 var addAList = function() {
@@ -15,6 +11,12 @@ var addAList = function() {
   // add class
   $listContainer.addClass('listContainer draggable')
   $listContainer.draggable();
+  // Create delete icon
+  var $trashbin = jQuery('<div>')
+  $trashbin.addClass('trashbin material-icons')
+  $trashbin.text('delete')
+  $trashbin.on('click', deleteList)
+  $trashbin.appendTo($listContainer)
   // create UList
   var $ul = jQuery('<ul>')
   // add class
@@ -30,8 +32,9 @@ var addAList = function() {
   var $addACard = jQuery('<input>')
   $addACard.attr('placeholder', 'Add a card...');
 
-  $addACard.on('keypress', function(evt){
 
+// event listener for adding card to list
+  $addACard.on('keypress', function(evt){
     if(evt.keyCode === 13 && jQuery(this).val() !== "") {
       console.log('i pressed enter')
       console.log(jQuery(this))
@@ -41,7 +44,7 @@ var addAList = function() {
       addACard($newCardText, $list)
       jQuery(this).val(null)
     }
-  })
+  });
 
   // append elements
   // append the list
@@ -65,10 +68,45 @@ var addACard = function(newItem, list) {
   $card.text(newItem)
   // append li to ul
   $card.appendTo(list)
-  // clear input field
 
-}
+};
 
-// var $makeItMove = jQuery(function() {
-//   jQuery('.draggable').draggable();
-// })
+// function to delete list
+var deleteList = function() {
+  jQuery(this).parent().remove()
+  console.log('delete')
+};
+
+// function to create list container
+// var createListContainer = function() {
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
