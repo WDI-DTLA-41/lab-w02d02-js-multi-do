@@ -29,28 +29,17 @@ var addAList = function() {
   // add class
   $listHeader.addClass('listHeader')
   // create input box
-  var $addACard = jQuery('<input>')
-  $addACard.attr('placeholder', 'Add a card...');
+  var $inputCard = jQuery('<input>')
+  $inputCard.attr('placeholder', 'Add a card...');
 
 
-// event listener for adding card to list
-  $addACard.on('keypress', function(evt){
-    if(evt.keyCode === 13 && jQuery(this).val() !== "") {
-      console.log('i pressed enter')
-      console.log(jQuery(this))
-      // get the list to append to
-      $list = jQuery(this).prev()
-      $newCardText = jQuery(this).val()
-      addACard($newCardText, $list)
-      jQuery(this).val(null)
-    }
-  });
-
+  // event listener for adding card to list
+  $inputCard.on('keypress', getCardInput)
   // append elements
   // append the list
   $listHeader.appendTo($ul)
   $ul.appendTo($listContainer)
-  $addACard.appendTo($listContainer)
+  $inputCard.appendTo($listContainer)
   // append list to body
   jQuery('body').append($listContainer)
 };
@@ -78,10 +67,18 @@ var deleteList = function() {
 };
 
 // function to create list container
-// var createListContainer = function() {
 
-// }
-
+var getCardInput = function(evt){
+  if(evt.keyCode === 13 && jQuery(this).val() !== "") {
+    console.log('i pressed enter')
+    console.log(jQuery(this))
+    // get the list to append to
+    $list = jQuery(this).prev()
+    $newCardText = jQuery(this).val()
+    addACard($newCardText, $list)
+    jQuery(this).val(null)
+  }
+}
 
 
 

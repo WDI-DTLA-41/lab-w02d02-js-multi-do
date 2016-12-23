@@ -16,7 +16,7 @@ button {
   display: inline-block;
   border-radius: 5px;
   padding: .2%;
-  position: relative;
+  position: absolute;
   overflow: scroll;
   max-height: 100%;
   box-shadow: 2px 2px 4px;
