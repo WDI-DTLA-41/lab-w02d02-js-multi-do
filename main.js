@@ -78,7 +78,7 @@ var getCardInput = function(evt){
     addACard($newCardText, $list)
     jQuery(this).val(null)
   }
-}
+};
 
 
 
