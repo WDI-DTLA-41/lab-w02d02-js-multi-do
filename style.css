@@ -13,7 +13,8 @@ button {
 .listContainer {
   background-color: rgba(220,220,220, 1);
   width: 25%;
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
   border-radius: 5px;
   padding: .2%;
   position: absolute;
@@ -25,14 +26,14 @@ button {
 
 .list {
   /*border: 1px solid red;*/
+  margin: 0;
   padding: 0;
-  margin: 0 auto;
 }
 
 .listHeader{
-  border: 1px solid red;
-  margin: 2%;
-  display: inline-block;
+  /*border: 1px solid red;*/
+  margin: 0;
+  padding: 2%;
 }
 
 .card {
@@ -41,7 +42,6 @@ button {
   padding: 1.5%;
   margin: 2%;
   /*border: 1px solid red;*/
-  display: block;
   font-size: 14px;
   overflow:scroll;
   list-style: none;
@@ -59,8 +59,6 @@ input:focus {
 }
 
 .trashbin {
-  text-align: left;
-  display: inline-block;
-  float: right;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
+  margin-left: auto;
 }
