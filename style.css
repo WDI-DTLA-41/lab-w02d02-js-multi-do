@@ -1,0 +1,63 @@
+body {
+  background-image: url('images/bg_image.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+button {
+  display: block;
+}
+
+.listContainer {
+  background-color: rgba(220,220,220, 1);
+  width: 25%;
+  display: inline-flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: .2%;
+  position: absolute;
+  overflow: scroll;
+  max-height: 100%;
+  box-shadow: 2px 2px 4px;
+  margin: 2%;
+}
+
+.list {
+  /*border: 1px solid red;*/
+  margin: 0;
+  padding: 0;
+}
+
+.listHeader{
+  /*border: 1px solid red;*/
+  margin: 0;
+  padding: 2%;
+}
+
+.card {
+  background-color: rgba(255,255,255,1);
+  border-radius: 5px;
+  padding: 1.5%;
+  margin: 2%;
+  /*border: 1px solid red;*/
+  font-size: 14px;
+  overflow:scroll;
+  list-style: none;
+}
+
+input {
+  margin: 2px;
+  font-size: 1em;
+  background-color: rgba(220,220,220, 1);
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.trashbin {
+  /*border: 1px solid red;*/
+  margin-left: auto;
+}
