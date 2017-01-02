@@ -24,6 +24,10 @@ body {
   display:block;
 }
 
+#title {
+  text-align: center;
+}
+
 .listBorder {
   border: 3px orange solid;
   min-width: 300px;
@@ -49,12 +53,13 @@ body {
   border-bottom:1px black solid;
   font-size:20px;
   padding:none;
-  margin-top:-4px;
+  margin-top:0;
+  text-align: center;
 }
 
 .noteRemove {
-  display:block;
+  float:right;
   font-size:28px;
   text-align:right;
-  margin-top:-10px;
+  margin-top:-5px;
 }
